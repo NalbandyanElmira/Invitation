@@ -1,0 +1,136 @@
+.agenda-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.agenda-title {
+  font-size: 75px;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+  mix-blend-mode: overlay;
+}
+
+.body[lang="hy"] .agenda-title {
+  font-family: ArmArtU;
+  font-size: 75px;
+}
+
+
+.agenda-content {
+  width: calc(100% - 90px);
+  min-width: 334px;
+  background-color: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(1px);
+  background-blend-mode: color-dodge;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.body[lang="hy"] .agenda-content {
+  width: 90%;
+  padding: 4%;
+}
+
+.agenda-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.agenda-item-header {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.agenda-item-clock {
+  font-size: 2.5rem;
+  color: var(--primary);
+  line-height: 1;
+}
+
+.body[lang="hy"] .agenda-item-clock {
+  font-family: ArmArtU;
+  font-size: 40px;
+}
+
+.agenda-item:nth-of-type(1) .agenda-item-clock,
+.agenda-item:nth-of-type(3) .agenda-item-clock {
+  margin-left: 10px;
+}
+
+.body[lang="hy"] .agenda-item:nth-of-type(1) .agenda-item-clock {
+  margin-left: 20px;
+}
+
+.body[lang="hy"] .agenda-item:nth-of-type(2) .agenda-item-clock {
+  margin-left: 26px;
+}
+
+.body[lang="hy"] .agenda-item:nth-of-type(3) .agenda-item-clock {
+  margin-left: 2px;
+}
+
+
+.agenda-item-title-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.agenda-item-title {
+  width: 100%;
+  text-align: right;
+  color: var(--primary);
+}
+
+.body[lang="hy"] .agenda-item-title {
+  font-family: ArmenianDecorative;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.agenda-item-line {
+  height: 8px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.agenda-item-line::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: var(--primary);
+}
+
+.agenda-item-line::before {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: var(--primary);
+}
+
+.agenda-item-description {
+  width: 100%;
+  text-align: right;
+  color: var(--secondary);
+}
+
+.body[lang="hy"] .agenda-item-description a {
+  font-family: ArmenianDecorative;
+  font-size: 20px;
+  text-transform: uppercase;
+}

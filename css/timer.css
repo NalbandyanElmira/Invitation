@@ -1,0 +1,127 @@
+.timer-container {
+  display: flex;
+  flex-direction: column;
+  height: 115%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.time-header {
+  padding: 24px;
+  font-size: 24px;
+  text-align: center;
+  color: var(--primary);
+}
+
+.body[lang="hy"] .time-header {
+  font-family: ArmenianDecorative;
+  font-size: 32px;
+}
+
+.timer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.timer-sections {
+  width: 100%;
+  background: transparent;
+  border-radius: 20px;
+  color: var(--white);
+  justify-items: center;
+  display: grid;
+  grid-template-rows: 1fr 1px 1fr 1px 1fr 1px 1fr;
+  gap: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.timer-section {
+  text-align: center;
+  padding: 10px;
+}
+
+.timer-section-time {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 8px;
+  color: #838429;
+}
+
+.timer-section-title {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+}
+
+.body[lang="hy"] .timer-section-title {
+  font-family: ArmenianDecorative;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.timer-you-have {
+  position: absolute;
+  top: -12px;
+  color: var(--primary);
+  text-transform: uppercase;
+}
+
+.timer-until {
+  bottom: -8px;
+  position: absolute;
+  color: var(--primary);
+  text-transform: uppercase;
+}
+
+.body[lang="hy"] .timer-until {
+  font-family: ArmenianDecorative;
+  font-size: 24px;
+  bottom: -12px;
+}
+
+.body[lang="hy"] .timer-you-have {
+  font-family: ArmenianDecorative;
+  font-size: 24px;
+  top: -18px;
+}
+
+.timer-wedding-date {
+  font-size: 36px;
+  padding: 0 24px;
+  text-align: center;
+  color: var(--primary);
+}
+
+.body[lang="hy"] .timer-wedding-date {
+  font-size: 24px;
+  font-family: ArmArtU;
+  margin-top: 12px;
+}
+
+.timer-wedding-button {
+  cursor: pointer;
+  background-color: var(--primary);
+  color: var(--white);
+  margin: 100px auto 0 auto;
+  display: inline-block;
+  padding: 16px 24px;
+  border-radius: 4px;
+  transition: box-shadow 0.3s;
+  border: .6px solid var(--secondary)
+}
+
+.timer-wedding-button:hover {
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.64);
+}
+
+.link {
+  color: var(--secondary);
+  text-decoration: none;
+}
